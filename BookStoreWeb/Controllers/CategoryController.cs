@@ -18,5 +18,12 @@ namespace BookStoreWeb.Controllers
             IEnumerable<Category> objCategoryList = _db.Categories.ToList();
             return View(objCategoryList);
         }
+
+        //Get action method
+        public IActionResult Create()
+        {
+            
+            return View();
+        }
     }
 }
